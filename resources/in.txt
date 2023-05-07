@@ -1,0 +1,12 @@
+Felina,Amber,12,Zimbabwe
+Peste,Nemo,2,Pacific,2.0
+Peste,Dori,10,Pacific,10.5
+Felina,Simba,8,Congo
+Reptila,Joseph,3,Australia,16.0
+Peste,Gigantomenia,23,Arctic,33.6
+Reptila,Astela,14,Filipine,17.5
+Reptila,Vampirita,11,Patagonia,15.3
+Felina,Nala,14,Congo
+Arahnida,Spinner,1,Australia
+Mamifer,Rudolf,125,Groenlanda
+Mamifer,Natasha,20,Rusia
