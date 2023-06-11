@@ -1,0 +1,35 @@
+O gradina zoologica are mai multe tipuri de animale. Toate animalele au un tip, un nume, o varsta si o tara de provenienta, dar numai reptilele au temperatura ambientala, iar pestii au marime de tanc necesara.
+
+Gradina zoologica are nevoie de o aplicatie de gestiune a animalelor, in cadrul careia sa poata face urmatoarele actiuni:
+
+- sa afiseze pe ecran animalele mai tinere de 10 ani;
+- sa afiseze pe ecran animalele a caror nume nu depaseste 5 litere;
+- sa afiseze pe ecran toate animalele;
+- sa dubleze marimea acvariilor la toti pestii;
+- sa scada cu un anumit nr de grade temperatura ambientala la reptile;
+- la fel, sa creasca temperatura;
+- sa schimbe tara de provenienta a tuturor felinelor in Zambia;
+- sa modifice varsta mamiferelor, inversand ordinea cifrelor varstei actuale (12 => 21);
+- sa schimbe numele animalelor care incep cu litera "A" in "Victoria".
+
+Datele de intrare se vor citi din fisierul "in.txt". Modificarile vor fi scrise in fisierul "out.txt" (pt toate cerintele, in afara de cele in care trebuie afisat pe ecran).
+
+in.txt:
+Felina,Amber,12,Zimbabwe
+Peste,Nemo,2,Pacific,2.0
+Peste,Dori,10,Pacific,10.5
+Felina,Simba,8,Congo
+Reptila,Joseph,3,Australia,16.0
+Peste,Gigantomenia,23,Arctic,33.6
+Reptila,Astela,14,Filipine,17.5
+Reptila,Vampirita,11,Patagonia,15.3
+Felina,Nala,14,Congo
+Arahnida,Spinner,1,Australia
+Mamifer,Rudolf,125,Groenlanda
+Mamifer,Natasha,20,Rusia
+
+deci programul va fi unul de tip consola si fiecare actiune va avea un index, de ex:
+1. afiseaza pe ecran animalele mai tinere de 10 ani
+2. afiseaza pe ecran animalele a caror nume nu depaseste 5 litere
+...
+si programul o sa-mi ceara un index si in functie de ce scriu sa se faca actiunea corespunzatoare

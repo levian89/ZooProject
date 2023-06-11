@@ -18,7 +18,7 @@ public class ZooRunner {
         String path = "./resources/in.txt";
      //   List<Animal> animals = readAnimals(path);
         List<Animal> animals = FileService.readAnimals(path);
-
+     //   System.out.println(animals);
 //        Felina felina = new Felina("Amber", 12, "Zimbabwe");
 //        System.out.println(felina);
 //        Felina felina1 = new Felina("Simba", 8, "Congo");
@@ -131,18 +131,19 @@ public class ZooRunner {
             }
 //            if (animal instanceof Mamifer) {
 //                int initialAge = animal.getAge();
+//                int temp = initialAge;
 //                int reverseAge = 0;
 //                while (initialAge>0) {
 //                   int r = initialAge % 10;
 //                   reverseAge = (reverseAge * 10) + r;
 //                   initialAge = initialAge /10;
 //                }
-//                String line = "name = " + animal.getName() + ", new age = " + reverseAge + ", old age = " + initialAge;
+//                String line = "name = " + animal.getName() + ", new age = " + reverseAge + ", old age = " + temp;
 //                lines.add(line);
 //            }
         }
         Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
-       // Files.write(Paths.get(outputFile), lines);
+        //Files.write(Paths.get(outputFile), lines);
         System.out.println("The file was written");
     }
 
