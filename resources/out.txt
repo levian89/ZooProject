@@ -1,0 +1,16 @@
+name = Nemo, new tank size = 4.0, old tank size = 2.0
+name = Dori, new tank size = 21.0, old tank size = 10.5
+name = Gigantomenia, new tank size = 67.2, old tank size = 33.6
+name = Joseph, new surrounding temperature = 11.0, old surrounding temperature = 16.0
+name = Astela, new surrounding temperature = 12.5, old surrounding temperature = 17.5
+name = Vampirita, new surrounding temperature = 10.3, old surrounding temperature = 15.3
+name = Joseph, new surrounding temperature = 21.0, old surrounding temperature = 16.0
+name = Astela, new surrounding temperature = 22.5, old surrounding temperature = 17.5
+name = Vampirita, new surrounding temperature = 20.3, old surrounding temperature = 15.3
+name = Amber, new country = Zambia, old country = Zimbabwe
+name = Simba, new country = Zambia, old country = Congo
+name = Nala, new country = Zambia, old country = Congo
+name = Rudolf, new age = 521, old age = 125
+name = Natasha, new age = 2, old age = 20
+name = Amber, new name = Victoria, old name = Amber
+name = Astela, new name = Victoria, old name = Astela

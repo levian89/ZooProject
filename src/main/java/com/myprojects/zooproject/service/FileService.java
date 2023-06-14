@@ -19,7 +19,7 @@ public class FileService {
 
         Path pathFileToRead = Paths.get(inputFilePath);
         List<String> lines = Files.readAllLines(pathFileToRead);
-       // System.out.println(lines);
+     //   System.out.println(lines);
         for (String line : lines) {
             String[] parts = line.split(","); // Divizez linia respectiva cu string-uri dupa virgula
             String animalType = parts[0];
@@ -54,7 +54,7 @@ public class FileService {
                     throw new IllegalArgumentException("Unknown animal");
             }
         }
-    //    System.out.println(animals);
+      //  System.out.println(animals);
         return animals;
     }
 }

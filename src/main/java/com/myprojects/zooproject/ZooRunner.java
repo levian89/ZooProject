@@ -16,9 +16,10 @@ import java.util.Scanner;
 public class ZooRunner {
     public static void main(String[] args) throws IOException {
         String path = "./resources/in.txt";
+        String outputFilePath = "./resources/out.txt";
      //   List<Animal> animals = readAnimals(path);
         List<Animal> animals = FileService.readAnimals(path);
-     //   System.out.println(animals);
+      //  System.out.println(animals);
 //        Felina felina = new Felina("Amber", 12, "Zimbabwe");
 //        System.out.println(felina);
 //        Felina felina1 = new Felina("Simba", 8, "Congo");
@@ -73,24 +74,24 @@ public class ZooRunner {
                     solveExercise3(animals);
                     break;
                 case 4:
-                    solveExercise4(animals, path);
+                    solveExercise4(animals, outputFilePath);
 //                    fara append
                     break;
                 case 5:
-                    solveExercise5(animals, path);
+                    solveExercise5(animals, outputFilePath);
                     break;
                 case 6:
-                    solveExercise6(animals,path);
+                    solveExercise6(animals, outputFilePath);
                     break;
                 case 7:
-                    solveExercise7(animals,path);
+                    solveExercise7(animals, outputFilePath);
                     break;
                 case 8:
-                    solveExercise8(animals,path);
+                    solveExercise8(animals, outputFilePath);
                     // la toate celelalte pui cu append
                     break;
                 case 9:
-                    solveExercise9(animals,path);
+                    solveExercise9(animals, outputFilePath);
                     break;
                 default:
                     System.out.println("Comanda necunoscuta");
