@@ -3,6 +3,7 @@ package com.myprojects.zooproject;
 
 import com.myprojects.zooproject.model.*;
 import com.myprojects.zooproject.service.FileService;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -15,10 +16,10 @@ import java.util.Scanner;
 
 public class ZooRunner {
     public static void main(String[] args) throws IOException {
-        String path = "./resources/in.txt";
+        String inputFilePath = "./resources/in.txt";
         String outputFilePath = "./resources/out.txt";
      //   List<Animal> animals = readAnimals(path);
-        List<Animal> animals = FileService.readAnimals(path);
+        List<Animal> animals = FileService.readAnimals(inputFilePath);
       //  System.out.println(animals);
 //        Felina felina = new Felina("Amber", 12, "Zimbabwe");
 //        System.out.println(felina);
@@ -53,12 +54,13 @@ public class ZooRunner {
 //        animals.add(felina);
 //        animals.add(peste);
 
-        System.out.println("Dati index comanda: 0 pentru iesire din aplicatie");
+
 
 
         Scanner scanner = new Scanner(System.in);
         int indexCommand;
         do {
+            System.out.println("Dati index comanda: 0 pentru iesire din aplicatie");
             indexCommand = scanner.nextInt();
             switch (indexCommand) {
                 case 0:
@@ -95,9 +97,9 @@ public class ZooRunner {
                     break;
                 default:
                     System.out.println("Comanda necunoscuta");
-
             }
         } while (indexCommand != 0);
+
     }
 
 
@@ -123,6 +125,7 @@ public class ZooRunner {
         for (Animal animal : animals) {
 //            if(animal.getClass().getSimpleName().equals("Mamifer")){
 //                    Mamifer m = (Mamifer) animal;
+//        }
             if (animal instanceof Mamifer) {
                 String ageText = String.valueOf(animal.getAge()); // transform in String valoarea varstei animalului de tip mamifer
                 String reverseAgeText = new StringBuilder(ageText).reverse().toString(); // inversez valoarea de tip string a varstei mamiferului
@@ -191,7 +194,8 @@ public class ZooRunner {
                 lines.add(line);
             }
         }
-        Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+        Path pathFileToWrite = Paths.get(outputFile);
+        Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
     //    Files.write(Paths.get(outputFile), lines);
         System.out.println("The file was written");
     }
@@ -215,8 +219,10 @@ public class ZooRunner {
                 lines.add(line);
             }
         }
-        Files.write(Paths.get(outputFile), lines);
+        Path pathFileToWrite = Paths.get(outputFile);
+        Path write = Files.write(pathFileToWrite, lines);
         System.out.println("The file was written");
+        System.out.println(write);
     }
 
 
