@@ -10,18 +10,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileService {
-    public void writeToFile(String filePath, String content) {
-        //    Files.write(Paths.get(filePath), content);
-    }
 
     public static List<Animal> readAnimals(String inputFilePath) throws IOException {
         List<Animal> animals = new ArrayList<>();
 
         Path pathFileToRead = Paths.get(inputFilePath);
         List<String> lines = Files.readAllLines(pathFileToRead);
-        System.out.println(lines);
         for (String line : lines) {
-            String[] parts = line.split(","); // Divizez linia respectiva cu string-uri dupa virgula
+            String[] parts = line.split(",");
             String animalType = parts[0];
             String name = parts[1];
             int age = Integer.parseInt(parts[2]); // Schimb string-ul de tip age in integer
@@ -54,7 +50,7 @@ public class FileService {
                     throw new IllegalArgumentException("Unknown animal");
             }
         }
-        System.out.println(animals);
+//        System.out.println(animals);
         return animals;
     }
 }

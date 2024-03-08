@@ -41,16 +41,7 @@ public class Animal {
     }
 
 
-
-
     public String toString() {
         return "Animal(name=" + this.name + ", age=" + this.age + ", country=" + this.country + ")";
     }
-
-//    public void printAnimalsYoungerThan10() {
-//        if (Animal.age<=10) {
-//            System.out.println(Animal.name);
-//        }
-//
-//    }
 }

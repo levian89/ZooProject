@@ -1,3 +1,0 @@
-name = Nemo, new tank size = 4.0, old tank size = 2.0
-name = Dori, new tank size = 21.0, old tank size = 10.5
-name = Gigantomenia, new tank size = 67.2, old tank size = 33.6
