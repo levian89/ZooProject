@@ -54,9 +54,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
@@ -79,9 +79,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
@@ -104,9 +104,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
@@ -128,9 +128,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
@@ -153,9 +153,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
@@ -177,9 +177,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
@@ -199,9 +199,9 @@ public class AnimalService {
         Path pathFileToWrite = Paths.get(outputFile);
         boolean fileExists = Files.exists(pathFileToWrite);
         if (fileExists) {
-            Files.write(Paths.get(outputFile), lines, StandardOpenOption.APPEND);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.APPEND);
         } else {
-            Files.write(Paths.get(outputFile), lines);
+            Files.write(pathFileToWrite, lines, StandardOpenOption.CREATE);
         }
         System.out.println("The file was written in " + pathFileToWrite);
     }
